@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <title>WhatsAppProject</title>
+    <script
+      src="https://kit.fontawesome.com/b8ff7285f3.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        font-family: "Roboto", sans-serif;
+      }
+      main {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 30px 0px 30px;
+        background-color: #128c7e;
+      }
+      .fa-bars {
+        align-self: flex-end;
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+        color: white;
+      }
+      .whatsapp-logo {
+        max-width: 100%;
+        height: 80px;
+        margin-bottom: 30px;
+      }
+      .top-text {
+        text-align: center;
+        margin-bottom: 20px;
+        color: white;
+        line-height: 30px;
+      }
+      .down-text {
+        text-align: center;
+        line-height: 30px;
+        max-width: 500px;
+        margin-bottom: 70px;
+        margin-left: auto;
+        margin-right: auto;
+        color: white;
+      }
+
+      .phone-pic {
+        width: 80%;
+      }
+      .big-phone-pic {
+        width: 80%;
+        display: none;
+      }
+
+      .large-screen {
+        padding: 0px 60px;
+        width: 100%;
+        height: 100vh;
+      }
+      .nav {
+        width: 100%;
+        background-color: #128c7e;
+        padding: 18px 20px;
+        position: fixed;
+        top: 0px;
+        left: 0;
+        visibility: hidden;
+        z-index: 4;
+      }
+      .allnav {
+        display: flex;
+        max-width: 1000px;
+        width: 100%;
+        margin: 0 auto;
+
+        align-items: center;
+      }
+      .whatsapp-nav-logo-sin-name {
+        max-width: 100%;
+        height: 35px;
+      }
+      .whatsapp-nav-logo-con-name {
+        max-width: 100%;
+        height: 35px;
+        display: none;
+      }
+      ul {
+        display: flex;
+        width: 100%;
+        text-decoration: none;
+        list-style: none;
+        align-items: center;
+        justify-content: space-between;
+
+        margin-left: 80px;
+        font-size: 1rem;
+        color: white;
+      }
+      li,
+      .space {
+        margin-left: 10px;
+      }
+      .data {
+        width: 70%;
+        margin-bottom: 30px;
+        font-size: 1.1rem;
+      }
+      a {
+        text-decoration: none;
+        color: #128c7e;
+      }
+
+      .last-icon-flex {
+        display: flex;
+        width: 50%;
+        justify-content: flex-start;
+        padding: 10px;
+        text-align: left;
+        color: #1cb39b;
+        font-size: 1.2rem;
+      }
+      .the-part-of-icons {
+        display: none;
+      }
+      @media (min-width: 770px) {
+        .nav {
+          visibility: visible;
+        }
+        .fa-bars {
+          visibility: hidden;
+        }
+        .whatsapp-logo {
+          display: none;
+        }
+        main {
+          background-color: white;
+          flex-direction: row;
+          padding: 120px 50px 50px 50px;
+          max-width: 1000px;
+          margin: 0 auto;
+        }
+
+        .top-text {
+          text-align: left;
+          color: black;
+          font-size: 1.5rem;
+          line-height: 50px;
+          font-weight: 100;
+          margin-bottom: 30px;
+        }
+        .down-text {
+          text-align: left;
+          width: 50%;
+          color: black;
+          margin-left: 0;
+          margin-right: 0;
+          line-height: 25px;
+          font-size: 1.2rem;
+          margin-bottom: 20px;
+        }
+        .phone-pic {
+          display: none;
+        }
+        .big-phone-pic {
+          display: inline-block;
+          width: 35%;
+          max-width: 100%;
+        }
+        .the-part-of-icons {
+          display: block;
+        }
+      }
+      @media (min-width: 1024px) {
+        .whatsapp-nav-logo-con-name {
+          display: inline-block;
+        }
+        .whatsapp-nav-logo-sin-name {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <i class="fa-solid fa-bars"></i>
+      <img
+        class="whatsapp-logo"
+        alt="whatsapp-logo"
+        src="https://static.whatsapp.net/rsrc.php/yz/r/lOol7j-zq4u.svg"
+      />
+      <article>
+        <div class="top-text">
+          <h1>Simple. Secure.</h1>
+          <h2>Reliable messaging.</h2>
+        </div>
+        <div class="down-text">
+          <p>
+            With WhatsApp, you'll get fast, simple, secure messaging and calling
+            for free*, available on phones all over the world.
+          </p>
+        </div>
+        <div class="the-part-of-icons">
+          <p class="data">
+            * Data charges may apply. Contact your provider for details.
+          </p>
+          <div class="last-icon-flex">
+            <i class="fas fa-robot"></i>
+            <a class="space" href="#">Android</a
+            ><i class="fas fa-chevron-right space"></i>
+          </div>
+          <div class="last-icon-flex">
+            <i class="fab fa-apple"></i>
+            <a class="space" href="#">iPhone</a
+            ><i class="fas fa-chevron-right space"></i>
+          </div>
+          <div class="last-icon-flex">
+            <i class="fas fa-desktop"></i>
+            <a class="space" href="#">Mac or Windows PC</a
+            ><i class="fas fa-chevron-right space"></i>
+          </div>
+        </div>
+      </article>
+
+      <img
+        class="phone-pic"
+        alt="phone-pic"
+        src="https://scontent.whatsapp.net/v/t39.8562-34/182096847_286358793090153_6035584702850962950_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=9BAALnRkM-wAX9BtPG9&_nc_ht=scontent.whatsapp.net&oh=01_AVxB-jik6x5XSbO9sW2JIPELoP9xkIGJgCQgId07KANGKA&oe=62C0504C"
+      />
+      <img
+        class="big-phone-pic"
+        alt="big-phone-pic"
+        src="https://scontent.whatsapp.net/v/t39.8562-34/178505650_460141378430025_2455877548463147186_n.png?ccb=1-7&_nc_sid=2fbf2a&_nc_ohc=JcRvnL7GhAAAX_Ij7xV&_nc_ht=scontent.whatsapp.net&oh=01_AVyY6Ar56atjSsozgSrym6g9MAw1yrPZnesCo833l_K2Tg&oe=62C1DA0C"
+      />
+    </main>
+
+    <nav class="nav">
+      <div class="allnav">
+        <img
+          class="whatsapp-nav-logo-sin-name"
+          src="https://static.whatsapp.net/rsrc.php/yz/r/lOol7j-zq4u.svg"
+          alt="whatsapp-logo-with-name"
+        />
+        <img
+          class="whatsapp-nav-logo-con-name"
+          src="https://static.whatsapp.net/rsrc.php/ym/r/36B424nhiL4.svg"
+          alt="whatsapp-logo-with-name"
+        />
+
+        <ul>
+          <li>WHATSAPP WEB</li>
+          <li>FEATURES</li>
+          <li>DOWNLOAD</li>
+          <li>SECURITY</li>
+          <li>HELP CENTER</li>
+          <li>EN</li>
+        </ul>
+      </div>
+    </nav>
+  </body>
+</html>
